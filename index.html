@@ -1,58 +1,60 @@
 <!DOCTYPE html>
-
-
 <html>
 
-
 <head>
-
- 
-  <title>Home Work</title>
-
- 
+    <meta charset="UTF-8">
+    <title>Coming Soon</title>
+    <script src="/js/cd.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<style>
-div {
-    width: 300px;
-    border: 25px solid green;
-    padding: 25px;
-    margin: 25px;
-}
-</style>
 
 <body>
 
- 
- <h3><span style="color:green; front-weight:bold; font-size:300%">4 ways of everything</span></h3>
+    <header>
+        
+    </header>
+    
+    <div class="section">
+        <div class="titles">
+            <div class="titles__first">
+                Coming Soon
+            </div>
+            <h1>
+                Subscribe to get notified on updates
+            </h1>
+        </div>
+        <form>
+            <input type="email" placeholder="your@email.com"
+            pattern=".+@globex.com" size="30" required
+            title="Must be a globex.com email address">
+            <button>Subscribe</button>
+        </form>
+   
+
+    
+    <span id="days">00</span>
+    <span id="hours">00</span>
+    <span id="minutes">00</span>
+    <span id="seconds">00</span>
+        
+    <script src="/js/cd.js"></script>
+    <script>
+        var callbackfunction = function() {
+            console.log('Done!');
+        }
+        countdown('15/09/2018 04:31:00 AM', ['days', 'hours', 'minutes', 'seconds'], callbackfunction);
+    </script>
 
 
- <p><span style="color:red; front-weight:bold; font-size:200%">Numero Uno</span></p>
- 
-
-    <a href="http://google.com">Surpise_Mother_Father</a>
-   <div>
-    <img src="https://picsum.photos/200/300/?random" alt="">
-   </div>
- <p><span style="color:blue; font-size:150%"> Numero Dos</span></p>
-   <div class="first">
-    <a href="#" alt>
-	Click on me
-    <img src="https://picsum.photos/200/300/?random" alt="">
-   </div>
-
- 
- <p><span style="color=black; front-weight:bold; font-size:100%">Numero Tres</p>
-   <div>
-    <a href="#" alt>
-     Clickunda
-    </a>
-    <img src="https://picsum.photos/200/300/?random" alt="">
-   </div>
-  <p><span style="color=pink; front-weight:bold; font-size:90%">Numero Quatro</p>
-
-
-    <div>
-    <a href="https://www.imdb.com/title/tt0389860/" alt>
-    <img src="https://picsum.photos/200/300/?random" alt="">
 </body>
+
+
+
+
+
+
+
+
+
+</html>
