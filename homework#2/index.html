@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coming Soon</title>
+    <script src="/js/cd.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+
+<body>
+
+    <header>
+        
+    </header>
+    
+    <div class="section">
+        <div class="titles">
+            <div class="titles__first">
+                Coming Soon
+            </div>
+            <h1>
+                Subscribe to get notified on updates
+            </h1>
+        </div>
+        <form>
+            <input type="email" placeholder="your@email.com"
+            pattern=".+@globex.com" size="30" required
+            title="Must be a globex.com email address">
+            <button>Subscribe</button>
+        </form>
+   
+
+    
+    <span id="days">00</span>
+    <span id="hours">00</span>
+    <span id="minutes">00</span>
+    <span id="seconds">00</span>
+        
+    <script src="/js/cd.js"></script>
+    <script>
+        var callbackfunction = function() {
+            console.log('Done!');
+        }
+        countdown('15/09/2018 04:31:00 AM', ['days', 'hours', 'minutes', 'seconds'], callbackfunction);
+    </script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
