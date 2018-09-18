@@ -1,35 +1,89 @@
-@import url('https://fonts.googleapis.com/css?family=Monoton');
 body{
-    font-family: 'Monoton', Arial, sans-serif;
+    font-family: 'HouschkaPro', sans-serif;
     padding: 0;
     margin: 0;
     background-color: #b9d6ef;
-}
-.section{
-    width: 600px;
-    margin: 0 auto;
+    z-index: -1;
 }
 div{
     box-sizing: border-box;
     position: relative;
+    z-index: -2;
 }
 .cloud{
+	width: 200px; height: 60px;
+	background: #fff;
+	border-radius: 200px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 200px;
+    position: relative; 
+    z-index: -3;
+}
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    z-index: -4;
+}
+.cloud:after {
+	width: 120px; height: 120px;
+    top: -55px; left: auto; right: 15px;
+    z-index: -5;
+}
+.c1 {
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+.c2 {
+	left: 200px;
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.4);
+	transform: scale(0.6);
+    opacity: 0.6;
     
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+.c3 {
+    left: -250px; top: -100px;
+    
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8;
+
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
 }
 .titles__first{
     font-size: 50px;
     color: #fefefe;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 110px;
-
+    margin-top: 2px;
+    z-index: -6;
 }
 h1{
     font-size: 10px;
-    color: #74a4c6;
+    font-family: 'HouschkaPro Medium';
+    color: #266b97;
     text-transform: uppercase;
     text-align: center;
     margin: 20px;
+    z-index: -7;
 }
 
 form{
@@ -38,6 +92,7 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -8;
     
 }
 
@@ -48,6 +103,7 @@ form input{
     height: 36px;
     border-radius: 3px;
     border: 1px solid rgb(255, 249, 249);
+    z-index: -9;
 }
 
 form input[type="email"]
@@ -70,14 +126,85 @@ button{
     transition: all 0.5s ease-in-out;
     background: linear-gradient(to top, #f8a426, #fbc742);
 }
-
 button:hover{
     background-color: whitesmoke;
     color: #f8a426;
 }
+.ice{
+    position: absolute;
+    left: 480px;
+    top: 465px;
+    z-index: -10;
+    
+}
+
+.ship{
+    position: relative;
+    left: 301px;
+    top: 258px;
+    width: 48px;
+    height: 21px;
+    z-index: -10;
+}
+
+.water{
+    display: block;
+    background-color: rgb(38, 107, 151);
+    position: relative;
+    left: 0px;
+    top: 244px;
+    min-width: 400;
+    max-width: 2000;
+    height: 343px;
+    z-index: -11;
+}
+.top_water{
+    display: inherit;
+    position: absolute(0 0 0 0);
+    background: #ddecfa;
+    top: 0px;
+    width: 1400;
+    height: 6px;
+    z-index: -12;
+}
+.mid_water{
+    display: inherit;
+    position: absolute(0 0 0 0);
+    background: #ddecfa;
+    top: 0;
+    width: 1400;
+    height: 9px;
+    background-color: rgb(50, 125, 173);
+    z-index: -13;
+}  
+
+  
+
+  
+
+
+
 
 .ice{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
 }

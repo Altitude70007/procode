@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+body{
+    font-family: 'Monoton', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #b9d6ef;
+}
+.section{
+    width: 600px;
+    margin: 0 auto;
+}
+div{
+    box-sizing: border-box;
+    position: relative;
+}
+.cloud{
+    
+}
+.titles__first{
+    font-size: 50px;
+    color: #fefefe;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 110px;
+
+}
+h1{
+    font-size: 10px;
+    color: #74a4c6;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+}
+
+form{
+    height: 36px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form input{
+    margin-right: 4px;
+    border: none;
+    widows: 300px;
+    height: 36px;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 249, 249);
+}
+
+form input[type="email"]
+{
+    padding-left: 10px;
+}
+
+button{
+    color: #ffffff;
+    border-radius: 3px;
+    width: 92px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #fabb39;
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(to top, #f8a426, #fbc742);
+}
+
+button:hover{
+    background-color: whitesmoke;
+    color: #f8a426;
+}
+
+.ice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

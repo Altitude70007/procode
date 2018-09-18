@@ -4,47 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Coming Soon</title>
-    <script src="/js/cd.js"></script>
+    <script src="/js/countdown.js"></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 
 <body>
 
-    <header>
-        
-    </header>
-    
-    <div class="section">
-        <div class="titles">
-            <div class="titles__first">
-                Coming Soon
-            </div>
-            <h1>
-                Subscribe to get notified on updates
-            </h1>
+    <div class="center">
+        <div class="cloud"></div>
+    </div>    
+
+    <div id="cloud">
+            <div class="cloud c1"></div>
+            <div class="cloud c2"></div>
+            <div class="cloud c3"></div>
+    </div>
+
+    <div class="titles">
+        <div class="titles__first">
+            Coming Soon
         </div>
-        <form>
-            <input type="email" placeholder="your@email.com"
-            pattern=".+@globex.com" size="30" required
-            title="Must be a globex.com email address">
-            <button>Subscribe</button>
-        </form>
+        <h1>
+            Subscribe to get notified on updates
+        </h1>
+
+    </div>
+
+    <form>
+        <input type="email" placeholder="your@email.com"
+        pattern=".+@globex.com" size="30" required
+        title="Must be a globex.com email address">
+        <button>Subscribe</button>
+    </form>
+    
+    <div class="ice">
+        <img src="img/ice.png">
+    </div>
+
+    <div class="ship">
+        <img src="img/ship.png">
+        <div class="ship a1"></div>
+    </div>
+    <div class="water">
+        <div class="top_water"></div>
+        <div class="mid_water"></div>
+    </div>
+
+    <div class="countdown">
+        <p class="timer">
+            <span id="days"></span> Days
+            <span id="hours"></span> Hour
+            <span id="minutes"></span> Minute
+        </p>
+    </div>
+        
+
+
+
    
 
     
-    <span id="days">00</span>
-    <span id="hours">00</span>
-    <span id="minutes">00</span>
+    <!-- <span id="days">113</span>
+    <span id="hours">09</span>
+    <span id="minutes">59</span>
     <span id="seconds">00</span>
         
-    <script src="/js/cd.js"></script>
+    <script src="/js/cd.js" type="text/javascript"></script>
     <script>
         var callbackfunction = function() {
             console.log('Done!');
         }
-        countdown('15/09/2018 04:31:00 AM', ['days', 'hours', 'minutes', 'seconds'], callbackfunction);
-    </script>
+        var countdown = new date('16/09/2018 10:05:50 AM', ['days', 'hours', 'minutes', 'seconds'], callbackfunction);
+    </script> -->
 
 
 </body>

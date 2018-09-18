@@ -37,13 +37,13 @@ var countdown = function (end, elements, callback) {
 				'seconds': Math.floor((remaining % _minute) / _second)
 			}
 
-			if (elements.lenght) {
-				for (x in elements) {
-					var x = elements[x];
-					data[x] = ('00' = data[x]).slice(-2);
-					document.getElementById(x).innerHTML = data(x);
-				}
-			}
+			// if (elements.lenght) {
+			// 	for (x in elements) {
+			// 		var x = elements[x];
+			// 		data[x] = ('00' = data[x]).slice(-2);
+			// 		document.getElementById(x).innerHTML = data(x);
+			// 	}
+			// }
 
 
 		};

@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #0d1429;
+}
+.center{
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cloud{
+    position: relative;
+    width: 150px;
+    height: 60px;
+    border-radius: 200px 200px 200px 200px;
+    background: #fff;
+    animation: move 8s linear infinite;
+}
+.cloud:before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(56, 28, 214);
+    width: 20px;
+    height: 20px;
+    top: -20px;
+    left:20px;
+}
+.cloud:after{
+    content: '';
+    position: absolute;
+    background: rgb(148, 62, 62);
+    border-radius: 50%;
+    width: 76.6px;
+    height: 76.6px;
+    top: -40px;
+    left:50px;
+}
